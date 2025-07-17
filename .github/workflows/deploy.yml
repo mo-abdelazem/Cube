@@ -18,11 +18,11 @@ jobs:
           mkdir -p ~/.ssh
           echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
-          ssh-keyscan -H $18.205.176.129 >> ~/.ssh/known_hosts
+          ssh-keyscan -H 18.205.176.129 >> ~/.ssh/known_hosts
 
       - name: Pull latest code and restart
         run: |
-          ssh $ec2-user@$18.205.176.129"
+          ssh ec2-user@18.205.176.129 "
             cd /home/ec2-user/Cube/server &&
             git pull origin main &&
             pm2 restart cube-server
