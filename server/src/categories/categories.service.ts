@@ -37,7 +37,12 @@ export class CategoriesService {
 
       const category = await this.prisma.category.create({
         data: {
-          ...categoryData,
+          slug: categoryData.slug,
+          ...(categoryData.parentId && {
+            parent: {
+              connect: { id: categoryData.parentId },
+            },
+          }),
           translations: {
             create: Object.entries(translations).map(([language, data]) => ({
               language,

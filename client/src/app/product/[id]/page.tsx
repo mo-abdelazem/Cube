@@ -47,7 +47,7 @@ export default function ProductPage() {
           Seeds of Change<br /> Organic Quinoa, Brown
         </h1>
         <div className="flex gap-1.5 items-center text-yellow-400 text-sm">
-          {Array.from({ length: 1 }).map((_, i) => (
+          {Array.from({ length: 5 }).map((_, i) => (
             <svg key={i} width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
               <path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z" />
             </svg>

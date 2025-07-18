@@ -6,6 +6,7 @@ import {
   Min,
   IsArray,
   ValidateNested,
+  IsObject,
 } from 'class-validator';
 import { Type } from 'class-transformer';
 import { ApiProperty } from '@nestjs/swagger';
@@ -85,6 +86,7 @@ export class CreateProductDto {
   hasVariants?: boolean;
 
   @ApiProperty({ type: 'object', additionalProperties: true })
+  @IsObject()
   translations: {
     [key: string]: {
       name: string;

@@ -35,8 +35,8 @@ export class CreateCategoryDto {
     description: 'Translations for different languages',
   })
   @IsObject()
-  @ValidateNested({ each: true })
-  @Type(() => CategoryTranslationDto)
+  // @ValidateNested({ each: true })
+  // @Type(() => CategoryTranslationDto)
   translations: Record<string, CategoryTranslationDto>;
 
   @ApiProperty({
