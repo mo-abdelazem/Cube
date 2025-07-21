@@ -19,7 +19,7 @@ export class ProductsService {
   constructor(private prisma: PrismaService) {}
 
   async create(createProductDto: CreateProductDto) {
-    const { translations, optionIds, variants, ...productData } =
+    const { translations, optionIds, variants, images, ...productData } =
       createProductDto;
 
     try {
@@ -41,6 +41,13 @@ export class ProductsService {
                 create: optionIds.map((optionId) => ({
                   optionId,
                   required: true,
+                })),
+              }
+            : undefined,
+          images: images
+            ? {
+                create: images.map((image) => ({
+                  url: image,
                 })),
               }
             : undefined,
@@ -73,7 +80,7 @@ export class ProductsService {
       // Create variants if provided
       if (variants && variants.length > 0) {
         for (const variantData of variants) {
-          const { optionValueIds, dimensions, ...variant } = variantData;
+          const { optionValueIds, dimensions, images, ...variant } = variantData;
 
           // Prepare the variant data with proper JSON handling
           const variantCreateData: Prisma.ProductVariantCreateInput = {
@@ -95,6 +102,13 @@ export class ProductsService {
                     })),
                   }
                 : undefined,
+            images: images
+              ? {
+                  create: images.map((image) => ({
+                    url: image,
+                  })),
+                }
+              : undefined,
           };
 
           await this.prisma.productVariant.create({

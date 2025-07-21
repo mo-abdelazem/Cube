@@ -50,6 +50,12 @@ class ProductVariantDto {
   @IsArray()
   @IsString({ each: true })
   optionValueIds: string[]; // Array of option value IDs for this variant
+
+  @ApiProperty({ type: [String], required: false })
+  @IsOptional()
+  @IsArray()
+  @IsString({ each: true })
+  images?: string[]; // Images for the variant
 }
 
 export class CreateProductDto {
@@ -109,4 +115,10 @@ export class CreateProductDto {
   @ValidateNested({ each: true })
   @Type(() => ProductVariantDto)
   variants?: ProductVariantDto[];
+
+  @ApiProperty({ type: [String], required: false })
+  @IsOptional()
+  @IsArray()
+  @IsString({ each: true })
+  images?: string[]; // Images for the product
 }
