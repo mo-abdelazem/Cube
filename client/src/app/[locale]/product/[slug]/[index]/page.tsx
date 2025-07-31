@@ -1,5 +1,6 @@
 import Image from "next/image";
 import QuantitySelector from "./QuantitySelector";
+import { getTranslations } from "next-intl/server";
 type Props = {
   params: {
     slug: string;
@@ -8,6 +9,8 @@ type Props = {
 };
 
 export default async function ProductPage({ params }: Props) {
+  const t = await getTranslations('HomePage');
+  
   const { slug, index } = await params;
   const res = await fetch(`http://localhost:3001/api/v1/products/${slug}`, {
     cache: "no-store",
@@ -101,7 +104,7 @@ export default async function ProductPage({ params }: Props) {
               <circle cx="20" cy="21" r="1"></circle>
               <path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6" />
             </svg>
-            Add to cart
+            {t('Add to cart')}
           </button>
         </div>
 
