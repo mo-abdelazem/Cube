@@ -3,5 +3,15 @@
     "title": "مرحبا!",
     "about": "اذهب إلى صفحة حول",
     "Add to cart": "أضف إلى السلة"
+  },
+  "Auth": {
+    "login": "تسجيل الدخول",
+    "register": "تسجيل حساب",
+    "email": "البريد الإلكتروني",
+    "password": "كلمة المرور",
+    "confirmPassword": "تأكيد كلمة المرور",
+    "submit": "إرسال",
+    "alreadyHaveAccount": "هل لديك حساب بالفعل؟",
+    "dontHaveAccount": "لا تملك حساب؟"
   }
 }

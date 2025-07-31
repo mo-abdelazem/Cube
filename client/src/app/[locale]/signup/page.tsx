@@ -3,8 +3,10 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import forGuest from "@/components/auth/forGuest";
+import { useTranslations } from "next-intl";
 
 function SignUpPage() {
+  const t = useTranslations('Auth');
   const router = useRouter();
 
   const [email, setEmail] = useState("");
@@ -94,7 +96,7 @@ function SignUpPage() {
             type="submit"
             className="w-full bg-emerald-500 hover:bg-emerald-600 text-white font-semibold py-2 rounded-md"
           >
-            Sign Up
+            {t('register')}
           </button>
         </form>
 
