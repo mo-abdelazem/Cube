@@ -2,7 +2,8 @@
   "HomePage": {
     "title": "Hello world!",
     "about": "Go to the about page",
-    "Add to cart": "Add to cart"
+    "Add to cart": "Add to cart",
+    "Home": "Home"
   },
   "Auth": {
     "login": "Login",
