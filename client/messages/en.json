@@ -14,5 +14,210 @@
     "submit": "Submit",
     "alreadyHaveAccount": "Already have an account?",
     "dontHaveAccount": "Don't have an account?"
+  },
+  "admin": {
+    "title": "Admin Panel",
+    "dashboard": {
+      "title": "Dashboard Overview",
+      "subtitle": "Welcome back! Here's what's happening with your store today.",
+      "stats": {
+        "totalUsers": "Total Users",
+        "totalProducts": "Total Products",
+        "totalOrders": "Total Orders",
+        "revenue": "Revenue",
+        "pageViews": "Page Views",
+        "conversionRate": "Conversion Rate",
+        "activeUsers": "Active Users",
+        "inactiveUsers": "Inactive Users",
+        "bannedUsers": "Banned Users",
+        "lowStock": "Low Stock",
+        "outOfStock": "Out of Stock",
+        "pendingOrders": "Pending Orders"
+      },
+      "sections": {
+        "salesOverview": "Sales Overview",
+        "recentActivity": "Recent Activity",
+        "topProducts": "Top Products"
+      }
+    },
+    "navigation": {
+      "dashboard": "Dashboard",
+      "users": "Users",
+      "products": "Products",
+      "orders": "Orders",
+      "analytics": "Analytics",
+      "settings": "Settings",
+      "closeSidebar": "Close Sidebar",
+      "signOut": "Sign out"
+    },
+    "users": {
+      "title": "Users Management",
+      "subtitle": "Manage your platform users and their permissions",
+      "addUser": "Add User",
+      "columns": {
+        "name": "Name",
+        "role": "Role",
+        "status": "Status",
+        "created": "Created",
+        "lastLogin": "Last Login"
+      },
+      "roles": {
+        "admin": "Admin",
+        "user": "User",
+        "moderator": "Moderator"
+      },
+      "status": {
+        "active": "Active",
+        "inactive": "Inactive",
+        "banned": "Banned"
+      }
+    },
+    "products": {
+      "title": "Products Management",
+      "subtitle": "Manage your product catalog and inventory",
+      "addProduct": "Add Product",
+      "allProducts": "All Products",
+      "addProductMenu": "Add Product",
+      "categories": "Categories",
+      "columns": {
+        "product": "Product",
+        "price": "Price",
+        "stock": "Stock",
+        "status": "Status",
+        "created": "Created"
+      },
+      "status": {
+        "active": "Active",
+        "inactive": "Inactive",
+        "draft": "Draft"
+      }
+    },
+    "orders": {
+      "title": "Orders Management",
+      "subtitle": "Track and manage customer orders",
+      "columns": {
+        "orderId": "Order ID",
+        "customer": "Customer",
+        "total": "Total",
+        "items": "Items",
+        "status": "Status",
+        "date": "Date"
+      },
+      "status": {
+        "pending": "pending",
+        "processing": "processing",
+        "shipped": "shipped",
+        "delivered": "delivered",
+        "cancelled": "cancelled"
+      },
+      "stats": {
+        "totalOrders": "Total Orders",
+        "pending": "Pending",
+        "processing": "Processing",
+        "shipped": "Shipped",
+        "delivered": "Delivered"
+      },
+      "modal": {
+        "title": "Order Details",
+        "customerInfo": "Customer Information",
+        "orderInfo": "Order Information",
+        "orderItems": "Order Items",
+        "name": "Name",
+        "email": "Email",
+        "address": "Address",
+        "orderId": "Order ID",
+        "date": "Date",
+        "status": "Status",
+        "total": "Total",
+        "itemsCount": "item",
+        "itemsCountPlural": "items",
+        "actions": {
+          "updateStatus": "Update Status",
+          "printInvoice": "Print Invoice",
+          "sendEmail": "Send Email"
+        }
+      }
+    },
+    "analytics": {
+      "title": "Analytics Dashboard",
+      "subtitle": "Track your business performance and key metrics",
+      "metrics": {
+        "pageViews": "Page Views",
+        "uniqueVisitors": "Unique Visitors",
+        "conversionRate": "Conversion Rate",
+        "avgSessionDuration": "Avg. Session Duration",
+        "bounceRate": "Bounce Rate",
+        "cartAbandonment": "Cart Abandonment",
+        "avgOrderValue": "Avg. Order Value"
+      },
+      "sections": {
+        "revenueBreakdown": "Revenue Breakdown",
+        "trafficSources": "Traffic Sources"
+      },
+      "categories": {
+        "electronics": "Electronics",
+        "fashion": "Fashion",
+        "homeGarden": "Home & Garden"
+      },
+      "traffic": {
+        "organicSearch": "Organic Search",
+        "direct": "Direct",
+        "socialMedia": "Social Media",
+        "paidAds": "Paid Ads"
+      }
+    },
+    "settings": {
+      "title": "Settings",
+      "subtitle": "Manage your application settings and configurations",
+      "tabs": {
+        "general": "General",
+        "email": "Email",
+        "security": "Security",
+        "database": "Database"
+      },
+      "general": {
+        "title": "General Settings",
+        "siteName": "Site Name",
+        "siteDescription": "Site Description",
+        "siteLogo": "Site Logo",
+        "uploadLogo": "Upload Logo"
+      },
+      "email": {
+        "title": "Email Settings",
+        "smtpHost": "SMTP Host",
+        "smtpPort": "SMTP Port",
+        "username": "Username",
+        "password": "Password"
+      },
+      "actions": {
+        "saveChanges": "Save Changes"
+      }
+    },
+    "common": {
+      "search": "Search...",
+      "filter": "Filter",
+      "actions": "Actions",
+      "noDataFound": "No data found",
+      "loading": "Loading...",
+      "sales": "sales",
+      "required": "Required",
+      "close": "Close",
+      "toggle_menu": "Toggle Menu",
+      "notifications": "Notifications"
+    },
+    "activity": {
+      "newUserRegistered": "New user registered",
+      "orderCompleted": "Order completed",
+      "productUpdated": "Product updated",
+      "systemBackup": "System backup",
+      "userJoined": "joined the platform",
+      "orderCompletedDesc": "has been completed",
+      "productUpdatedDesc": "specifications updated",
+      "backupCompleted": "Daily backup completed successfully",
+      "timeAgo": {
+        "minutesAgo": "minutes ago",
+        "hourAgo": "hour ago"
+      }
+    }
   }
 }

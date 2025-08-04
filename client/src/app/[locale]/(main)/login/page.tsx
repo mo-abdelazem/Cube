@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { signIn } from "next-auth/react";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 import forGuest from "@/components/auth/forGuest";
 
 function LoginPage() {
@@ -64,10 +65,12 @@ function LoginPage() {
         </form>
 
         <p className="text-center text-sm text-gray-600 mt-4">
-          Don&apos;t have an account?{" "}
-          <a href="/signup" className="text-emerald-600 font-medium hover:underline">
+          <Link
+            href="/signup"
+            className="text-emerald-600 font-medium hover:underline"
+          >
             Sign up
-          </a>
+          </Link>
         </p>
       </div>
     </main>

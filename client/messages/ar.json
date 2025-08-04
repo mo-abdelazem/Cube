@@ -14,5 +14,210 @@
     "submit": "إرسال",
     "alreadyHaveAccount": "هل لديك حساب بالفعل؟",
     "dontHaveAccount": "لا تملك حساب؟"
+  },
+  "admin": {
+    "title": "لوحة الإدارة",
+    "dashboard": {
+      "title": "نظرة عامة على لوحة التحكم",
+      "subtitle": "مرحبًا بعودتك! إليك ما يحدث في متجرك اليوم.",
+      "stats": {
+        "totalUsers": "إجمالي المستخدمين",
+        "totalProducts": "إجمالي المنتجات",
+        "totalOrders": "إجمالي الطلبات",
+        "revenue": "الإيرادات",
+        "pageViews": "مشاهدات الصفحة",
+        "conversionRate": "معدل التحويل",
+        "activeUsers": "المستخدمون النشطون",
+        "inactiveUsers": "المستخدمون غير النشطين",
+        "bannedUsers": "المستخدمون المحظورون",
+        "lowStock": "مخزون منخفض",
+        "outOfStock": "نفد المخزون",
+        "pendingOrders": "الطلبات المعلقة"
+      },
+      "sections": {
+        "salesOverview": "نظرة عامة على المبيعات",
+        "recentActivity": "النشاط الأخير",
+        "topProducts": "أفضل المنتجات"
+      }
+    },
+    "navigation": {
+      "dashboard": "لوحة التحكم",
+      "users": "المستخدمون",
+      "products": "المنتجات",
+      "orders": "الطلبات",
+      "analytics": "التحليلات",
+      "settings": "الإعدادات",
+      "closeSidebar": "إغلاق الشريط الجانبي",
+      "signOut": "تسجيل الخروج"
+    },
+    "users": {
+      "title": "إدارة المستخدمين",
+      "subtitle": "إدارة مستخدمي المنصة وصلاحياتهم",
+      "addUser": "إضافة مستخدم",
+      "columns": {
+        "name": "الاسم",
+        "role": "الدور",
+        "status": "الحالة",
+        "created": "تاريخ الإنشاء",
+        "lastLogin": "آخر دخول"
+      },
+      "roles": {
+        "admin": "مدير",
+        "user": "مستخدم",
+        "moderator": "مشرف"
+      },
+      "status": {
+        "active": "نشط",
+        "inactive": "غير نشط",
+        "banned": "محظور"
+      }
+    },
+    "products": {
+      "title": "إدارة المنتجات",
+      "subtitle": "إدارة كتالوج المنتجات والمخزون",
+      "addProduct": "إضافة منتج",
+      "allProducts": "جميع المنتجات",
+      "addProductMenu": "إضافة منتج",
+      "categories": "التصنيفات",
+      "columns": {
+        "product": "المنتج",
+        "price": "السعر",
+        "stock": "المخزون",
+        "status": "الحالة",
+        "created": "تاريخ الإنشاء"
+      },
+      "status": {
+        "active": "نشط",
+        "inactive": "غير نشط",
+        "draft": "مسودة"
+      }
+    },
+    "orders": {
+      "title": "إدارة الطلبات",
+      "subtitle": "تتبع وإدارة طلبات العملاء",
+      "columns": {
+        "orderId": "رقم الطلب",
+        "customer": "العميل",
+        "total": "الإجمالي",
+        "items": "العناصر",
+        "status": "الحالة",
+        "date": "التاريخ"
+      },
+      "status": {
+        "pending": "قيد الانتظار",
+        "processing": "قيد المعالجة",
+        "shipped": "تم الشحن",
+        "delivered": "تم التسليم",
+        "cancelled": "ملغي"
+      },
+      "stats": {
+        "totalOrders": "إجمالي الطلبات",
+        "pending": "قيد الانتظار",
+        "processing": "قيد المعالجة",
+        "shipped": "تم الشحن",
+        "delivered": "تم التسليم"
+      },
+      "modal": {
+        "title": "تفاصيل الطلب",
+        "customerInfo": "معلومات العميل",
+        "orderInfo": "معلومات الطلب",
+        "orderItems": "عناصر الطلب",
+        "name": "الاسم",
+        "email": "البريد الإلكتروني",
+        "address": "العنوان",
+        "orderId": "رقم الطلب",
+        "date": "التاريخ",
+        "status": "الحالة",
+        "total": "الإجمالي",
+        "itemsCount": "عنصر",
+        "itemsCountPlural": "عناصر",
+        "actions": {
+          "updateStatus": "تحديث الحالة",
+          "printInvoice": "طباعة الفاتورة",
+          "sendEmail": "إرسال بريد إلكتروني"
+        }
+      }
+    },
+    "analytics": {
+      "title": "لوحة التحليلات",
+      "subtitle": "تتبع أداء عملك والمقاييس الرئيسية",
+      "metrics": {
+        "pageViews": "مشاهدات الصفحة",
+        "uniqueVisitors": "الزوار الفريدون",
+        "conversionRate": "معدل التحويل",
+        "avgSessionDuration": "متوسط مدة الجلسة",
+        "bounceRate": "معدل الارتداد",
+        "cartAbandonment": "هجر سلة التسوق",
+        "avgOrderValue": "متوسط قيمة الطلب"
+      },
+      "sections": {
+        "revenueBreakdown": "تفصيل الإيرادات",
+        "trafficSources": "مصادر الزيارات"
+      },
+      "categories": {
+        "electronics": "الإلكترونيات",
+        "fashion": "الأزياء",
+        "homeGarden": "المنزل والحديقة"
+      },
+      "traffic": {
+        "organicSearch": "البحث العضوي",
+        "direct": "مباشر",
+        "socialMedia": "وسائل التواصل الاجتماعي",
+        "paidAds": "الإعلانات المموّلة"
+      }
+    },
+    "settings": {
+      "title": "الإعدادات",
+      "subtitle": "إدارة إعدادات التطبيق والتكوينات",
+      "tabs": {
+        "general": "عام",
+        "email": "البريد الإلكتروني",
+        "security": "الأمان",
+        "database": "قاعدة البيانات"
+      },
+      "general": {
+        "title": "الإعدادات العامة",
+        "siteName": "اسم الموقع",
+        "siteDescription": "وصف الموقع",
+        "siteLogo": "شعار الموقع",
+        "uploadLogo": "تحميل الشعار"
+      },
+      "email": {
+        "title": "إعدادات البريد الإلكتروني",
+        "smtpHost": "خادم SMTP",
+        "smtpPort": "منفذ SMTP",
+        "username": "اسم المستخدم",
+        "password": "كلمة المرور"
+      },
+      "actions": {
+        "saveChanges": "حفظ التغييرات"
+      }
+    },
+    "common": {
+      "search": "بحث...",
+      "filter": "تصفية",
+      "actions": "الإجراءات",
+      "noDataFound": "لم يتم العثور على بيانات",
+      "loading": "جاري التحميل...",
+      "sales": "مبيعات",
+      "required": "مطلوب",
+      "close": "إغلاق",
+      "toggle_menu": "تبديل القائمة",
+      "notifications": "الإشعارات"
+    },
+    "activity": {
+      "newUserRegistered": "تم تسجيل مستخدم جديد",
+      "orderCompleted": "تم إتمام الطلب",
+      "productUpdated": "تم تحديث المنتج",
+      "systemBackup": "نسخ احتياطي للنظام",
+      "userJoined": "انضم إلى المنصة",
+      "orderCompletedDesc": "تم إتمامه",
+      "productUpdatedDesc": "تم تحديث المواصفات",
+      "backupCompleted": "تم إكمال النسخ الاحتياطي اليومي بنجاح",
+      "timeAgo": {
+        "minutesAgo": "دقائق مضت",
+        "hourAgo": "ساعة مضت"
+      }
+    }
   }
 }
