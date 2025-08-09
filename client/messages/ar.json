@@ -5,6 +5,26 @@
     "Add to cart": "أضف إلى السلة",
     "Home": "الرئيسية"
   },
+  "ProductDetails": {
+    "addToCart": "أضف إلى السلة",
+    "sale": "خصم",
+    "reviews": "مراجعة",
+    "offPercentage": "{percent} خصم",
+    "originalPrice": "السعر الأصلي: ${price}",
+    "sizeWeight": "الحجم / الوزن:",
+    "defaultSize": "الحجم الافتراضي",
+    "type": "النوع",
+    "sku": "رمز التخزين",
+    "mfg": "تاريخ الإنتاج",
+    "tags": "الوسوم",
+    "life": "مدة الصلاحية",
+    "stock": "{stock} عنصر في المخزون",
+    "stockLabel": "في المخزون",
+    "tagOrganic": "عضوي",
+    "tagSnack": "وجبة خفيفة",
+    "tagBrown": "بني"
+  },
+
   "Auth": {
     "login": "تسجيل الدخول",
     "register": "تسجيل حساب",
@@ -13,7 +33,10 @@
     "confirmPassword": "تأكيد كلمة المرور",
     "submit": "إرسال",
     "alreadyHaveAccount": "هل لديك حساب بالفعل؟",
-    "dontHaveAccount": "لا تملك حساب؟"
+    "dontHaveAccount": "لا تملك حساب؟",
+    "firstName": "الاسم الأول",
+    "lastName": "اسم العائلة",
+    "invalidCredentials": "البريد الإلكتروني أو كلمة المرور غير صحيحة"
   },
   "admin": {
     "title": "لوحة الإدارة",

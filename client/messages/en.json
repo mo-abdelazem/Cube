@@ -5,6 +5,25 @@
     "Add to cart": "Add to cart",
     "Home": "Home"
   },
+  "ProductDetails": {
+    "addToCart": "Add to cart",
+    "sale": "Sale Off",
+    "reviews": "reviews",
+    "offPercentage": "{percent} Off",
+    "originalPrice": "Original: ${price}",
+    "sizeWeight": "Size / Weight:",
+    "defaultSize": "Default Size",
+    "type": "Type",
+    "sku": "SKU",
+    "mfg": "MFG",
+    "tags": "Tags",
+    "life": "Shelf Life",
+    "stock": "{stock} Items In Stock",
+    "stockLabel": "In Stock",
+    "tagOrganic": "Organic",
+    "tagSnack": "Snack",
+    "tagBrown": "Brown"
+  },
   "Auth": {
     "login": "Login",
     "register": "Register",
@@ -13,7 +32,11 @@
     "confirmPassword": "Confirm Password",
     "submit": "Submit",
     "alreadyHaveAccount": "Already have an account?",
-    "dontHaveAccount": "Don't have an account?"
+    "dontHaveAccount": "Don't have an account?",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "invalidCredentials": "Invalid email or password"
+
   },
   "admin": {
     "title": "Admin Panel",
