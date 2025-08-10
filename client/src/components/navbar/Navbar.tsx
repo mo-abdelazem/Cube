@@ -15,8 +15,10 @@ import {
   TabPanel,
   TabPanels,
 } from '@headlessui/react'
-import { Bars3Icon, MagnifyingGlassIcon, ShoppingBagIcon, XMarkIcon } from '@heroicons/react/24/outline'
+import { ArrowRightOnRectangleIcon, Bars3Icon, MagnifyingGlassIcon, ShoppingBagIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import { useCartStore } from '@/store/useCartStore'
+import Link from 'next/link'
+import { signOut, useSession } from 'next-auth/react'
 
 const navigation = {
   categories: [
@@ -146,12 +148,12 @@ export default function Example() {
   const [open, setOpen] = useState(false)
   const cartCount = useCartStore((state) => state.getCount());
   const fetchCart = useCartStore((state) => state.fetchCart);
-
+  const { status } = useSession();
+  const isAuthenticated = status === 'authenticated';
+  const isLoading = status === 'loading';
   useEffect(() => {
     fetchCart();
   }, []);
-
-
 
   return (
     <div className="bg-white">
@@ -247,20 +249,20 @@ export default function Example() {
                 </div>
               ))}
             </div>
-
+              { !isLoading && !isAuthenticated &&
             <div className="space-y-6 border-t border-gray-200 px-4 py-6">
               <div className="flow-root">
-                <a href="#" className="-m-2 block p-2 font-medium text-gray-900">
+                <Link href="/login" className="-m-2 block p-2 font-medium text-gray-900">
                   Sign in
-                </a>
+                </Link>
               </div>
               <div className="flow-root">
-                <a href="#" className="-m-2 block p-2 font-medium text-gray-900">
+                <Link href="/signup" className="-m-2 block p-2 font-medium text-gray-900">
                   Create account
-                </a>
+                </Link>
               </div>
             </div>
-
+              }
             <div className="border-t border-gray-200 px-4 py-6">
               <a href="#" className="-m-2 flex items-center p-2">
                 <img
@@ -382,17 +384,34 @@ export default function Example() {
                   ))}
                 </div>
               </PopoverGroup>
-
               <div className="ml-auto flex items-center">
-                <div className="hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6">
-                  <a href="#" className="text-sm font-medium text-gray-700 hover:text-gray-800">
-                    Sign in
-                  </a>
-                  <span aria-hidden="true" className="h-6 w-px bg-gray-200" />
-                  <a href="#" className="text-sm font-medium text-gray-700 hover:text-gray-800">
-                    Create account
-                  </a>
-                </div>
+                  {!isLoading && (
+                    isAuthenticated ? (
+                      <button
+                        onClick={() => signOut({ callbackUrl: '/' })}
+                        className="inline-flex items-center gap-2 rounded-md border border-transparent bg-red-50 px-3 py-1.5 text-sm font-medium text-red-600 shadow-sm hover:bg-red-100 hover:text-red-700 hover:shadow-md hover:scale-105 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-1 transition-transform transition-colors duration-200 cursor-pointer"
+                      >
+                        <ArrowRightOnRectangleIcon className="w-4 h-4" />
+                        Log out
+                      </button>
+                    ) : (
+                      <div className="hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6">
+                        <Link
+                          href="/login"
+                          className="text-sm font-medium text-gray-700 hover:text-gray-800"
+                        >
+                          Sign in
+                        </Link>
+                        <span aria-hidden="true" className="h-6 w-px bg-gray-200" />
+                        <Link
+                          href="/signup"
+                          className="text-sm font-medium text-gray-700 hover:text-gray-800"
+                        >
+                          Create account
+                        </Link>
+                      </div>
+                    )
+                  )}
 
                 <div className="hidden lg:ml-8 lg:flex">
                   <a href="#" className="flex items-center text-gray-700 hover:text-gray-800">
